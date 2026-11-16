@@ -9,8 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>try{if(localStorage.getItem('theme')==='night')document.documentElement.setAttribute('data-theme','night')}catch(e){}</script>
 </head>
 <body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
 
   <div class="floaties" aria-hidden="true">
     <span style="--x:8%;  --d:16s; --s:1.3rem; --delay:0s">✦</span>
@@ -24,8 +26,8 @@
   <header class="site-header">
     <p class="hello">✧ the professional side ✧</p>
     <h1>Experience &amp; Skills</h1>
-    <p class="tagline">AI-Driven Entrepreneur · Customer Support · Animal Welfare Advocate · Virtual Assistant · Creative Multimedia</p>
-    <p class="rotator"><span id="rotating-word">customer support</span></p>
+    <p class="tagline">Entrepreneur · Customer Support · Animal Welfare Advocate · Virtual Assistant · Creative Multimedia</p>
+    <p class="rotator"><span id="rotating-word" data-words="customer support|virtual assistance|multimedia|entrepreneurship|animal welfare ♡">customer support</span></p>
   </header>
 
   <nav class="top-navbar">
@@ -43,17 +45,17 @@
 
     <section id="summary" class="reveal">
       <h2>Professional Summary</h2>
-      <p class="lead">AI-Driven Virtual Assistant &amp; Customer Support Specialist with a proven track record in client relations, conflict resolution, and operational efficiency. I excel at managing high-volume customer inquiries, executing high-accuracy data entry, and providing seamless technical troubleshooting across diverse digital platforms.</p>
+      <p class="lead" style="text-align: justify;">Virtual Assistant &amp; Customer Support Specialist with a proven track record in client relations, conflict resolution, and operational efficiency. I excel at managing high-volume customer inquiries, executing high-accuracy data entry, and providing seamless technical troubleshooting across diverse digital platforms.</p>
       <div class="facts">
         <span class="fact">📍 Tacloban, Philippines</span>
         <span class="fact">🎓 BA Multimedia Studies, UPOU</span>
         <span class="fact">💻 Tech-Savvy Girl</span>
-        <span class="fact">🐾 Animal Welfare Avocate</span>
+        <span class="fact">🐾 Animal Welfare Advocate</span>
       </div>
       <h3 class="sub">Core Competencies and Skills</h3>
       <div class="chips">
         <span class="chip">Active Listening</span>
-        <span class="chip">Conflic De-escalation</span>
+        <span class="chip">Conflict De-escalation</span>
         <span class="chip">Program Management</span>
         <span class="chip">Adaptability</span>
         <span class="chip">Critical Thinking</span>
@@ -73,13 +75,13 @@
         <article class="t-item">
           <div class="t-head">
             <h3>Owner</h3>
-            <span class="t-date now">Aug 2023 – August 2026</span>
+            <span class="t-date">Aug 2023 – Aug 2026</span>
           </div>
           <p class="t-org">White Rabbit Minimart · Full-time · Tacloban, On-site</p>
-          <ul class="t-list">
-            <li>Handles daily customer inquiries and resolves complex complaints using proven de-escalation techniques and CRM principles to maintain high customer satisfaction.</li>
+          <ul class="t-list" >
+            <li style="text-align: justify;">Handles daily customer inquiries and resolves complex complaints using proven de-escalation techniques and CRM principles to maintain high customer satisfaction.</li>
           </ul>
-          <blockquote>"When I started my first year at UP Open University, I saw a huge opportunity in the asynchronous setup: the flexibility to build a business while studying."</blockquote>
+          <blockquote style="text-align: justify;">"When I started my first year at UP Open University, I saw a huge opportunity in the asynchronous setup: the flexibility to build a business while studying."</blockquote>
           <div class="badges"><span class="badge">Customer Service</span><span class="badge">Business Development</span></div>
         </article>
 
@@ -90,8 +92,8 @@
           </div>
           <p class="t-org">Boldr · Internship · Tacloban, On-site</p>
           <ul class="t-list">
-            <li>Developed core skills in BPO Academy modules, focusing on customer experience, global communication, and technical problem-solving.</li>
-            <li>Completed the intensive 2-month Boldr BPO Academy training program, gaining hands-on experience in business process operations.</li>
+            <li style="text-align: justify;">Developed core skills in BPO Academy modules, focusing on customer experience, global communication, and technical problem-solving.</li>
+            <li style="text-align: justify;">Completed the intensive 2-month Boldr BPO Academy training program, gaining hands-on experience in business process operations.</li>
           </ul>
           <div class="badges"><span class="badge">De-escalation</span><span class="badge">Troubleshooting</span></div>
         </article>
@@ -103,7 +105,7 @@
           </div>
           <p class="t-org">Saint Paul School of Professional Studies · The Ledger</p>
           <ul class="t-list">
-            <li>Directed social media management for SPSPS The Ledger, drafting captions, scheduling posts, and checking that content was ready to go out.</li>
+            <li style="text-align: justify;">Directed social media management for SPSPS The Ledger, drafting captions, scheduling posts, and checking that content was ready to go out.</li>
           </ul>
           <div class="badges"><span class="badge">Quality Inspection</span><span class="badge">Teamwork</span></div>
         </article>
@@ -115,7 +117,7 @@
           </div>
           <p class="t-org">Explained PH</p>
           <ul class="t-list">
-            <li>Designed digital visuals that grew audience engagement and supported promotional campaigns.</li>
+            <li style="text-align: justify;">Designed digital visuals that grew audience engagement and supported promotional campaigns.</li>
           </ul>
           <div class="badges"><span class="badge">Content Creation</span><span class="badge">Graphic Design</span></div>
         </article>
@@ -127,10 +129,10 @@
           </div>
           <p class="t-org">JobStreet · Freelance · Hybrid</p>
           <ul class="t-list">
-            <li>Delivered professional photography and video editing services under tight, client-driven deadlines.</li>
-            <li>Produced and edited digital content and promotional materials to build client brands.</li>
+            <li style="text-align: justify;">Delivered professional photography and video editing services under tight, client-driven deadlines.</li>
+            <li style="text-align: justify;">Produced and edited digital content and promotional materials to build client brands.</li>
           </ul>
-          <blockquote>"When the pandemic hit, I decided to turn idle time into an opportunity: taking on local photography and photo editing clients, and learning freelance work offline."</blockquote>
+          <blockquote style="text-align: justify;">"When the pandemic hit, I decided to turn idle time into an opportunity: taking on local photography and photo editing clients, and learning freelance work offline."</blockquote>
           <div class="badges"><span class="badge">Photography</span><span class="badge">Video Editing</span></div>
         </article>
 
@@ -141,43 +143,76 @@
       <h2>Skills</h2>
       <div class="skill-groups">
         <div class="skill-group">
-          <h3>💬 Customer &amp; Support</h3>
+          <h3>💬 Customer Service</h3>
           <div class="chips left">
-            <span class="chip">Customer Service</span><span class="chip">Customer Support</span><span class="chip">Technical Support</span><span class="chip">CRM</span><span class="chip">Conflict Resolution</span><span class="chip">Appointment Scheduling</span>
+            <span class="chip">Customer Support</span>
+            <span class="chip">Technical Troubleshooting</span>
+            <span class="chip">CRM</span>
+            <span class="chip">Conflict Resolution</span>
+            <span class="chip">Appointment Scheduling</span>
+            <span class="chip">Active Listening</span>
+            <span class="chip">Empathetic Communication</span>
+            <span class="chip">Problem-Solving</span>
           </div>
         </div>
+
         <div class="skill-group">
           <h3>📋 Business &amp; Operations</h3>
           <div class="chips left">
-            <span class="chip">Entrepreneurship</span><span class="chip">Business Development</span><span class="chip">Program Management</span><span class="chip">Project Management</span><span class="chip">Virtual Assistance</span><span class="chip">Data Entry</span><span class="chip">Research</span><span class="chip">Outsourcing</span>
+            <span class="chip">Entrepreneurship</span>
+            <span class="chip">Business Development</span>
+            <span class="chip">Client Communication</span>
+            <span class="chip">Project Management</span>
+            <span class="chip">Data Entry</span>
+            <span class="chip">Research</span>
           </div>
         </div>
+
         <div class="skill-group">
           <h3>🎨 Creative &amp; Multimedia</h3>
           <div class="chips left">
-            <span class="chip">Graphic Design</span><span class="chip">Video Editing</span><span class="chip">Photography</span><span class="chip">Photo Editing</span><span class="chip">Social Media Management</span><span class="chip">Content Creation</span>
+            <span class="chip">Graphic Design</span>
+            <span class="chip">Video Editing</span>
+            <span class="chip">Photography</span>
+            <span class="chip">Photo Editing</span>
+            <span class="chip">Social Media Management</span>
+            <span class="chip">Content Creation</span>
+            <span class="chip">User Experience</span>
           </div>
         </div>
+
         <div class="skill-group">
           <h3>💻 Tech</h3>
           <div class="chips left">
-            <span class="chip">Artificial Intelligence (AI)</span><span class="chip">Python</span><span class="chip">CSS</span>
+            <span class="chip">Prompt Engineering</span>
+            <span class="chip">Python</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Tech Continuous Learning</span>
           </div>
         </div>
         <div class="skill-group">
+
           <h3>🌱 Working Style</h3>
           <div class="chips left">
             <span class="chip">Teamwork</span><span class="chip">Decision Making</span><span class="chip">Time Management</span><span class="chip">Quality Inspection</span>
           </div>
         </div>
       </div>
+  </section>
 
-      <h3 class="sub">Tools I use</h3>
+    <section id="tools" class="reveal">
+      <h2>Tools I Use</h2>
       <div class="chips">
         <span class="chip">Adobe Express</span>
         <span class="chip">Google Suite</span>
         <span class="chip">Canva</span>
         <span class="chip">Filmora</span>
+        <span class="chip">Audacity</span>
+        <span class="chip">Visual Studio Code</span>
+        <span class="chip">GitHub</span>
+        <span class="chip">AnyDesk</span>
+        <span class="chip">Ren'Py</span>
       </div>
     </section>
 
@@ -218,12 +253,12 @@
       <h2>Certifications &amp; Training</h2>
       <div class="cert-grid">
         <article class="cert">
-          <span class="cert-score">85<small>th pct</small></span>
+          <span class="cert-score" data-count="85">85<small>th pct</small></span>
           <h3>English B2 (Upper Intermediate)</h3>
           <p>TestGorilla · Sep 2026</p>
         </article>
         <article class="cert">
-          <span class="cert-score">91<small>st pct</small></span>
+          <span class="cert-score" data-count="91">91<small>st pct</small></span>
           <h3>Attention to Detail (Textual)</h3>
           <p>TestGorilla · Sep 2026</p>
         </article>
@@ -269,17 +304,9 @@
     <p class="copyright">© <span id="year"></span> Roshimaine Arpon</p>
   </footer>
 
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Night mode" aria-pressed="false">🌙</button>
   <a href="#top" class="to-top" id="to-top" aria-label="Back to top">↑</a>
 
   <script src="site.js"></script>
-  <script>
-    const words = ['customer support', 'virtual assistance', 'multimedia', 'entrepreneurship', 'animal welfare ♡'];
-    const wordEl = document.getElementById('rotating-word');
-    let wi = 0;
-    setInterval(() => {
-      wordEl.classList.add('out');
-      setTimeout(() => { wi = (wi + 1) % words.length; wordEl.textContent = words[wi]; wordEl.classList.remove('out'); }, 350);
-    }, 2200);
-  </script>
 </body>
 </html>
