@@ -9,8 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>try{if(localStorage.getItem('theme')==='night')document.documentElement.setAttribute('data-theme','night')}catch(e){}</script>
 </head>
 <body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
 
 
   <div class="floaties" aria-hidden="true">
@@ -24,10 +26,10 @@
   </div>
 
   <header class="site-header">
-    <p class="hello">✧ hello, world! i'm ✧</p>
+    <p class="hello" id="greeting">✧ hello, world! i'm ✧</p>
     <h1><span id="typed-text"></span><span class="cursor">&nbsp;</span></h1>
     <p class="tagline">Exploring visual ideas, digital spaces, and stories that connect</p>
-    <p class="rotator" aria-live="off"><span id="rotating-word">typography</span></p>
+    <p class="rotator" aria-live="off"><span id="rotating-word" data-words="typography|digital layouts|motion|animation|storytelling|cats ♡">typography</span></p>
   </header>
 
   <nav class="top-navbar">
@@ -52,14 +54,14 @@
         </div>
 
         <div class="bio-content">
-          <ul>
+          <ul style="text-align: justify;">
             <li>Fourth-year Bachelor of Arts in Multimedia Studies student at UP Open University, where online learning has built my confidence with technology, from coding and multimedia editing to working with online tools and digital platforms.</li>
             <li>Virtual assistant and customer support professional who puts that tech know-how to work: troubleshooting across digital platforms, handling data with accuracy, and keeping clients happy with clear, dependable service.</li>
             <li>I combine typography, digital layouts, and motion with emerging technology to tell stories that spark empathy and connect people.</li>
           </ul>
         </div>
       </div>
-      <div class="chips" aria-label="Interests">
+      <div class="chips" role="group" aria-label="Interests">
         <span class="chip">Emerging Technology Exploration</span>
         <span class="chip">Digital Layouts</span>
         <span class="chip">Creative Multimedia</span>
@@ -73,18 +75,18 @@
     <section id="things-i-love" class="reveal">
       <h2>I love...</h2>
       <div class="love-grid">
-        <article class="love-card">
-          <div class="love-icon" aria-hidden="true">🎞️</div>
+        <div class="love-card film" style="text-align: justify;">
+          <div class="love-icon" data-hover="👻" aria-hidden="true">🎞️</div>
           <p>Watching different kinds of films, and learning how they're made and the stories behind them. Currently into the horror genre, inspired by great horror authors</p>
-        </article>
-        <article class="love-card">
+        </div>
+        <div class="love-card" style="text-align: justify;">
           <div class="love-icon" aria-hidden="true">💻</div>
           <p>Experimenting with coding and creating interactive multimedia.</p>
-        </article>
-        <article class="love-card">
-          <div class="love-icon cat" aria-hidden="true">🐱</div>
-          <p>Playing with my cats.</p>
-        </article>
+        </div>
+        <div class="love-card" style="text-align: justify;">
+          <div class="love-icon cat" role="button" tabindex="0" aria-label="Pet my cat">🐱</div>
+          <p>Playing and cuddling with my cats.</p>
+        </div>
       </div>
     </section>
 
@@ -102,7 +104,7 @@
         </div>
       </div>
 
-      <div id="project-container" class="project-grid">
+      <div style="text-align: justify;" id="project-container" class="project-grid">
         <p class="loading">Loading projects…</p>
       </div>
     </section>
@@ -115,12 +117,13 @@
       <a class="btn" href="mailto:rbarpon@up.edu.ph">Email</a>
       <a class="btn btn-alt" href="https://www.linkedin.com/in/roshimaine-arpon-566766191/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
+    <p class="badge-line"><a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" width="88" height="31"></a></p>
     <p class="copyright">© <span id="year"></span> Roshimaine Arpon</p>
   </footer>
 
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Night mode" aria-pressed="false">🌙</button>
   <a href="#top" class="to-top" id="to-top" aria-label="Back to top">↑</a>
 
   <script src="site.js"></script>
-
 </body>
 </html>
