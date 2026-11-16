@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Roshimaine Arpon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+
+  <div class="floaties" aria-hidden="true">
+    <span style="--x:6%;  --d:14s; --s:1.4rem; --delay:0s">✦</span>
+    <span style="--x:18%; --d:18s; --s:1rem;   --delay:3s">♡</span>
+    <span style="--x:32%; --d:16s; --s:1.2rem; --delay:7s">✧</span>
+    <span style="--x:48%; --d:20s; --s:1.5rem; --delay:1s">☁</span>
+    <span style="--x:63%; --d:15s; --s:1rem;   --delay:5s">♡</span>
+    <span style="--x:77%; --d:19s; --s:1.3rem; --delay:9s">✦</span>
+    <span style="--x:90%; --d:17s; --s:1.1rem; --delay:2s">✧</span>
+  </div>
+
+  <header class="site-header">
+    <p class="hello">✧ hello, world! i'm ✧</p>
+    <h1><span id="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+    <p class="tagline">Exploring visual ideas, digital spaces, and stories that connect</p>
+    <p class="rotator" aria-live="off"><span id="rotating-word">typography</span></p>
+  </header>
+
+  <nav class="top-navbar">
+    <ul class="nav-menu">
+      <li><a href="#top" class="active" data-target="top">Home</a></li>
+      <li><a href="#about" data-target="about">About Me</a></li>
+      <li><a href="experience.html">Experiences</a></li>
+      <li><a href="#things-i-love" data-target="things-i-love">Things I Love</a></li>
+      <li><a href="#passion-projects" data-target="passion-projects">Passion Projects</a></li>
+      <li><a href="#contact" data-target="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="top">
+    <section id="about" class="reveal">
+      <h2>About Me</h2>
+      <div class="bio-container">
+        <div class="photo-wrap">
+          <img src="profile_photo.jpg" alt="Roshimaine Arpon Profile Photo" class="profile-photo" onerror="this.src='https://via.placeholder.com/120?text=Photo'">
+          <span class="sticker s1" aria-hidden="true">✦</span>
+          <span class="sticker s2" aria-hidden="true">♡</span>
+        </div>
+
+        <div class="bio-content">
+          <ul>
+            <li>Fourth-year Bachelor of Arts in Multimedia Studies student at UP Open University, where online learning has built my confidence with technology, from coding and multimedia editing to working with online tools and digital platforms.</li>
+            <li>Virtual assistant and customer support professional who puts that tech know-how to work: troubleshooting across digital platforms, handling data with accuracy, and keeping clients happy with clear, dependable service.</li>
+            <li>I combine typography, digital layouts, and motion with emerging technology to tell stories that spark empathy and connect people.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="chips" aria-label="Interests">
+        <span class="chip">Emerging Technology Exploration</span>
+        <span class="chip">Digital Layouts</span>
+        <span class="chip">Creative Multimedia</span>
+        <span class="chip">Videography</span>
+        <span class="chip">Photography</span>
+        <span class="chip">Animal and Community Welfare Advocate</span>
+      </div> 
+      <p class="more-note"><a href="experience.html">Looking for my work experience &amp; skills? Click here!</a></p>
+    </section>
+
+    <section id="things-i-love" class="reveal">
+      <h2>I love...</h2>
+      <div class="love-grid">
+        <article class="love-card">
+          <div class="love-icon" aria-hidden="true">🎞️</div>
+          <p>Watching different kinds of films, and learning how they're made and the stories behind them. Currently into the horror genre, inspired by great horror authors</p>
+        </article>
+        <article class="love-card">
+          <div class="love-icon" aria-hidden="true">💻</div>
+          <p>Experimenting with coding and creating interactive multimedia.</p>
+        </article>
+        <article class="love-card">
+          <div class="love-icon cat" aria-hidden="true">🐱</div>
+          <p>Playing with my cats.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="passion-projects" class="reveal">
+      <h2>Passion Projects</h2>
+
+      <div class="video-frame">
+        <div class="video-container">
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D1651918521867287&amp;show_text=0"
+            title="Passion Project Video: Video showcasing multimedia and creative work"
+            allowfullscreen
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+      </div>
+
+      <div id="project-container" class="project-grid">
+        <p class="loading">Loading projects…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="reveal">
+    <h2>Contact</h2>
+    <p class="contact-note">Reach me out through...</p>
+    <div class="contact-buttons">
+      <a class="btn" href="mailto:rbarpon@up.edu.ph">Email</a>
+      <a class="btn btn-alt" href="https://www.linkedin.com/in/roshimaine-arpon-566766191/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Roshimaine Arpon</p>
+  </footer>
+
+  <a href="#top" class="to-top" id="to-top" aria-label="Back to top">↑</a>
+
+  <script src="site.js"></script>
+
+</body>
+</html>

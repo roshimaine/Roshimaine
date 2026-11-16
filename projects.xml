@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+
+  <project>
+    <title>Tsuperhero</title>
+    <tag>Documentary</tag>
+    <emoji>🎬</emoji>
+    <description>A 3-minutes documentary showcasing jeepney drivers' experiences in Leyte, fulfilling their duties to serve the public and their families despite the COVID-19 pandemic and oil price hike.</description>
+    <date>2022</date>
+  </project>
+
+  <project>
+    <title>Love Calculator</title>
+    <tag>Python App</tag>
+    <emoji>💘</emoji>
+    <description>A Python application that determines name compatibility using functional programming principles and the Tkinter library for the graphical interface.</description>
+    <date>2024</date>
+  </project>
+
+  <project>
+    <title>Kaibigang Pusa't Aso: Interactive Stray Care &amp; Safety</title>
+    <tag>Interactive Story</tag>
+    <emoji>🐾</emoji>
+    <status>In progress</status>
+    <description>Ongoing Project: An interactive story for kids to teach them empathy and compassion towards stray animals.</description>
+    <date>2027</date>
+  </project>
+
+</projects>
+ 
